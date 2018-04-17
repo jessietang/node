@@ -8,7 +8,7 @@ const ejs = require('ejs');
 const mysql = require('mysql');
 const common = require('./libs/common');
 
-// 连接池
+// 连接池 
 const db = mysql.createPool({host: 'localhost', port: '3306', user: 'root',
 password: '123456', database: 'blog'});
 
