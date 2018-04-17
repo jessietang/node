@@ -1,0 +1,16 @@
+{
+  "name": "jt25",
+  "version": "0.0.2",
+  "description": "测试包。。。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "25",
+    "tj",
+    "jt"
+  ],
+  "author": "jessietang",
+  "license": "ISC"
+}

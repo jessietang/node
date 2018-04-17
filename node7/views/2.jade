@@ -1,0 +1,67 @@
+doctype
+html
+    head
+        meta(charset='utf-8')
+        title jade测试页面
+        style
+        style(src='a.js')
+        link(href='a.css', rel='stylesheet')
+        script alert('aaaaa')
+    body
+        div test11111111111111
+            span test22222222222222
+        ul
+            li
+                input(type='text', value='txt1')
+            li
+                a(href='www.cuit.edu.cn') cuit
+            li
+        div(style='width:200px;height:30px;background-color:red;')
+        div(style={width: '200px', height: '30px', backgroundColor: 'red'})
+        div(class='aaa bbb ccc ddd')
+        div(class=['aaa', 'bbb', 'ccc', 'ddd'])
+        div.class1
+        div#id1
+        div(title='mmm', id="div1")
+        div&attributes({title: 'mmm', id: 'div1'})
+        script
+            |window.onload = function(){
+            |	var oBtn = document.getElementById('btn1');
+            |	oBtn.onclick = function(){
+            |		alert('test);
+            |	};
+            |};
+        p.
+           hhhhhhhhhhhhhhhh
+        script.
+            document.getElementById('ttt')
+        div 我的名字：#{name}
+        div 求和: #{a+b}
+        div(style=json)
+        div(class=arr)
+
+        div
+            -var a = 12;
+            -var b = 5;
+            p 结果是：#{a + b}
+        -for(var i=0; i<arr2.length; i++)
+            div=arr2[i]
+
+        div!=content
+
+        -var m = 8
+        -if(m % 2 == 0)
+            div(style={background: 'red'}) 偶数
+        -else
+            div(style={background: 'green'}) 奇数
+
+        -var n = 2;
+        case n
+            when 0
+                div aaa
+            when 1
+                div bbb
+            when 2
+                div ccc
+            default
+                |不靠谱

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    我的名字是： <%= name %>
+    <%= json.arr[0].user%>
+    <div>
+        <%for(var i in json.arr){%>
+        <div>
+            <%=json.arr[i].user%>
+        </div>
+        <%}%>
+    </div>
+
+<div>
+    <%=13%>+<%=14%>
+</div>
+
+<div>
+    <%
+     var str = '<p>111111</p>'
+      %>
+    <%= str%>
+    <%- str%>
+</div>
+
+<div>
+    <%include ../a.txt%>
+
+    <%for(var i=0; i<5; i++){%>
+        <%include ../a.txt%>
+    <%}%>
+</div>
+
+<div>
+    <%if (type=='admin'){%>
+    <%include ../style/admin.css%>
+    <%}else{%>
+    <%include ../style/user.css%>
+    <%}%>
+</div>
+</body>
+</html>
